@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Leer el archivo CSV
-
 dataframe = pd.read_csv('HE11_2d.csv', sep='\s+', engine='python')
 dataframe2 = pd.read_csv('HE12_2d.csv', sep='\s+', engine='python')
 
@@ -11,11 +9,11 @@ c1=0.175061
 c2=0.085634
 c3=-0.10259
 
-# Renombrar las columnas
+
 dataframe.columns = ['Wavelength1', '1n1', '1n1p1', '1n1p2', '1n1p3', '1n1p4']
 dataframe2.columns = ['Wavelength2', '2n1', '2n1p1', '2n1p2', '2n1p3', '2n1p4']
 
-# Extraer columnas individuales para graficar
+
 w1 = dataframe['Wavelength1']
 n11 = dataframe['1n1']
 n21 = dataframe['1n1p1']
@@ -73,16 +71,16 @@ ax.set_xlim(1.5, 1.65)
 ax.set_ylim(0.225, .325)
 
 ax=fig1.add_subplot(2, 3, 5)
-# Valores del eje x (índice de refracción) y del eje y (beta)
+
 n_values = [1.0, 1.1, 1.2, 1.3, 1.4]
 m_values = [-m1, -m2, -m3, -m4, -m5]
 colors = ['r', 'g', 'b', 'k', 'm']
 
 for n, m, c in zip(n_values, m_values, colors):
     beta = 2 * np.pi / (m * 28000)
-    ax.plot(n, beta, color=c, marker='o')  # Usamos marcador para mostrar los puntos
+    ax.plot(n, beta, color=c, marker='o') 
 
-# Etiquetas y ajustes del gráfico
+
 ax.set_xlabel("Index of refraction n₃")
 ax.set_ylabel("$L_{min,1}$")
 ax.grid(color='gray', linestyle='dashed', linewidth=1, alpha=0.4)
@@ -92,16 +90,16 @@ ax.set_ylim(.75, .81)
 
 ax = fig1.add_subplot(2, 3, 6)
 
-# Valores del eje x (índice de refracción) y del eje y (beta)
+
 n_values = [1.0, 1.1, 1.2, 1.3, 1.4]
 m_values = [-m1, -m2, -m3, -m4, -m5]
 colors = ['r', 'g', 'b', 'k', 'm']
 
 for n, m, c in zip(n_values, m_values, colors):
     beta = 4 * np.pi / (m * 28000)
-    ax.plot(n, beta, color=c, marker='o')  # Usamos marcador para mostrar los puntos
+    ax.plot(n, beta, color=c, marker='o')  
 
-# Etiquetas y ajustes del gráfico
+
 ax.set_xlabel("Index of refraction n₃")
 ax.set_ylabel("$L_{min,2}$")
 ax.grid(color='gray', linestyle='dashed', linewidth=1, alpha=0.4)
