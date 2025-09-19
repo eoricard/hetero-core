@@ -9,34 +9,28 @@ This paper presents a numerical and experimental exploration of the transmission
 
     ├── README.md          <- README
     ├── data
-    │   ├── beta_LP         <- Data table of the propagation constant, for LP modes ($\lambda$, $\beta(\lambda)$)
-    │   ├── beta_HE         <- Data table of the propagation constant, for HE modes ($\lambda$, $\beta(\lambda)$)
-    │   ├── beta_HE_2D      <- Data table of the propagation constant, for LP modes ($\lambda$, $\beta(\lambda)$)
+    │   ├── beta_LP01       <- Data table of the propagation constant, for LP modes 
+    │   ├── beta_HE         <- Data table of the propagation constant, for HE modes 
+    │   ├── beta_HE_2D      <- Data table of the propagation constant, for LP modes 
     |
-    ├── references         <- Diccionarios de datos, manuales y todos material que explique los datos.
+    ├── references         <- suplemental information
     │
-    ├── reports            <- Análisis generado puede ser como HTML, PDF, LaTex, etc.
-    │   └── figures        <- Gráficos y figuras generados usados en los reports.
+    ├── figures           <- figures for suplemental information.
+    │  
+    ├── SI_01_propagation_constant      <-propagation constant
+    │   ├── Plot_betaLP.py               <- Data table of the propagation constant, for LP modes 
+    │   ├── Plot_betaHE.py               <- Data table of the propagation constant, for HE modes 
+    │   ├── Plot_betaHE_2D.py            <- Data table of the propagation constant, for LP modes 
+    │   ├── Plot_diference.py            <- Data table of the propagation constant, for HE modes 
+    │   ├── Plot_betaHE_2D.py            <- Data table of the propagation constant, for LP modes 
     │
-    ├── src                <- Código principal para el uso del proyecto.
-    │   ├── __init__.py    <- Convierte al folder en un modulo de Python.
-    │   │
-    │   ├── _01_Business_Understanding      <- Exploración inicial para entender el negocio.
-    │   │
-    │   ├── _02_Data_Understanding          <- Exploración para entender los datos y sus disponibilidad.
-    │   │
-    │   ├── _03_Data_Preparation            <- Seleccionar, ordenar, agrupar, remover, etc. los datos para alcanzar los objetivos.
-    │   │
-    │   ├── _04_Modeling                    <- Scripts para generación del modelo y afinamiento de parámetros.
-    │   │
-    │   ├── _05_Evaluation                  <- Scripts para evaluación de resultados establecidos al inicio del proyecto.
-    │   │
-    │   └── _06_Deployment                  <- Scripts para el despliegue y pase a producción.
+    ├── _02_Data_Understanding          <- Exploración para entender los datos y sus disponibilidad.
+    |
+    ├── _03_Data_Preparation            <- Seleccionar, ordenar, agrupar, remover, etc. los datos para alcanzar los objetivos.
     │   
-    ├── enviroment.yml              <- Archivo con listado de los paquetes necesarios para reproducir el entorno de análisis.
-    │
-    ├── 00.create_env.bat           <- Ejecutable para crear el entorno virtual con los parámetros del archivo "enviroment.yml".
-    │
-    └── 01.update_enviroment.bat    <- Ejecutable para actualizar el archivo "enviroment.yml" antes de ser compartido.
-
-
+    ├── _04_Modeling                    <- Scripts para generación del modelo y afinamiento de parámetros.
+    │   
+    ├── _05_Evaluation                  <- Scripts para evaluación de resultados establecidos al inicio del proyecto.
+    │   
+    ├── _06_Deployment                  <- Scripts para el despliegue y pase a producción.
+    
