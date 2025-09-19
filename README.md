@@ -5,24 +5,26 @@ This paper presents a numerical and experimental exploration of the transmission
 
 ==============================
 
- <h2>1. project </h2>
+ <h2>1. Project </h2>
 
-    ├── README.md          <- README
+    ├── README.md                         <- README
     ├── data
-    │   ├── beta_LP01       <- Data table of the propagation constant, for LP modes 
-    │   ├── beta_HE         <- Data table of the propagation constant, for HE modes 
-    │   ├── beta_HE_2D      <- Data table of the propagation constant, for LP modes 
-    |
-    ├── references         <- suplemental information
+    │   ├── beta_LP01                     <- Data table of the propagation constant, for LP modes 
+    │   ├── beta_HE                       <- Data table of the propagation constant, for HE modes 
+    │   ├── beta_HE_2D                    <- Data table of the propagation constant, for LP modes 
+    | 
+    ├── references                        <- suplemental information
     │
-    ├── figures           <- figures for suplemental information.
+    ├── figures                           <- figures for suplemental information.
+    | 
+    ├── SI_01_characteristic_equation     <-characteristic equation.
+    |   ├── Plot_characteristic.py        <- Data table of the propagation constant, for LP modes. 
     │  
-    ├── SI_01_propagation_constant      <-propagation constant
+    ├── SI_01_propagation_constant       <-propagation constant
     │   ├── Plot_betaLP.py               <- Data table of the propagation constant, for LP modes 
     │   ├── Plot_betaHE.py               <- Data table of the propagation constant, for HE modes 
     │   ├── Plot_betaHE_2D.py            <- Data table of the propagation constant, for LP modes 
     │   ├── Plot_diference.py            <- Data table of the propagation constant, for HE modes 
-    │   ├── Plot_betaHE_2D.py            <- Data table of the propagation constant, for LP modes 
     │
     ├── _02_Data_Understanding          <- Exploración para entender los datos y sus disponibilidad.
     |
