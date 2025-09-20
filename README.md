@@ -1,38 +1,45 @@
 # hetero-core
 This repository allows reproduce the graps, and exploration of the interference in a hetero-core fiber 
 
-This paper presents a numerical and experimental exploration of the transmission interference spectra of heterogeneous core optical fiber structures. The hetero-core device is fabricated using two multimode optical fiber segments and a coreless fiber section, using a simple and highly reproducible methodology. The refractometric response of the hetero-core device was evaluated as a function of the coreless fiber section length, ranging from 21 mm to 60 mm. The refractive index of the external medium was varied from 1.00 to a range of 1.2971-1.3912. The results show that the wavelength position of the minimum of the transmission spectrum shifts to longer wavelengths, with a sensitivity ranging from 4.32 nm/RIU  to 276.87 nm/RIU. The numerical model proposed in this work considers only two modes in the coreless fiber section, with the highest values of the overlapping integral that facilitate the determination of the position of the minimum transmittance in wavelength and its dependence on the length of the coreless section and the refractive index of the external medium. Consequently, this model can be employed as either an analytical method for designing multimode-coreless-multimode fiber-based sensors or as a complementary computational tool for determining the refractive index of a liquid sample surrounding the multimode-coreless-multimode fiber-optic structure.
-
 ==============================
 
  <h2>1. Project </h2>
 
     ├── README.md                         <- README
     ├── data
-    │   ├── beta_LP01                     <- Data table of the propagation constant, for LP modes 
-    │   ├── beta_HE                       <- Data table of the propagation constant, for HE modes 
-    │   ├── beta_HE_2D                    <- Data table of the propagation constant, for LP modes 
+    │   ├── beta_LP01                     <- Data table of the propagation constant, for LP modes (lambda,beta(lambda))
+    │   ├── beta_HE                       <- Data table of the propagation constant, for HE modes (lambda,beta(lambda))
+    │   ├── beta_HE_2D                    <- Data table of the propagation constant, for HE modes and 4 refraction indexes (lambda,beta(lambda,n3=1),beta(lambda,n3=1.1),beta(lambda,,n3=1.2),beta(lambda,n3=1.3),beta(lambda,n3=1.4))
     | 
     ├── references                        <- suplemental information
-    │
-    ├── figures                           <- figures for suplemental information.
     | 
-    ├── SI_01_characteristic_equation     <-characteristic equation.
-    |   ├── Plot_characteristic.py        <- Data table of the propagation constant, for LP modes. 
+    ├── SI_01_characteristic_equation     <- characteristic equation
+    |   ├── plot_characteristic.py        <- Script to graph the characteristic equation as a function of the refractive index n3 and the radius of the heterocore fiber r2 #plot_characteristic(n3,r2,"Figure1")  
     │  
-    ├── SI_01_propagation_constant       <-propagation constant
-    │   ├── Plot_betaLP.py               <- Data table of the propagation constant, for LP modes 
-    │   ├── Plot_betaHE.py               <- Data table of the propagation constant, for HE modes 
-    │   ├── Plot_betaHE_2D.py            <- Data table of the propagation constant, for LP modes 
-    │   ├── Plot_diference.py            <- Data table of the propagation constant, for HE modes 
+    ├── SI_02_propagation_constant       <- propagation constant
+    │   ├── plot_betaLP.py               <- Script to graph the propagation constant, for LP modes 
+    │   ├── plot_betaHE.py               <- Script to graph the propagation constant, for HE modes 
+    │   ├── plot_betaHE_2D.py            <- Script to graph the propagation constant, for HE modes for 4 refracction indexes 
+    │   ├── plot_diference.py            <- Script to graph the difreence propagation constant, between HE11-HE12  
     │
-    ├── _02_Data_Understanding          <- Exploración para entender los datos y sus disponibilidad.
+    ├── SI_03_modal_distribution         <- modal distribution
+    │   ├── plot_modeLP.py               <- Script to graph the modal distribution, for LP modes 
+    │   ├── plot_modeHE.py               <- Script to graph the modal distribution, for HE modes 
     |
-    ├── _03_Data_Preparation            <- Seleccionar, ordenar, agrupar, remover, etc. los datos para alcanzar los objetivos.
+    ├── SI_04_normalization              <- normalization
+    │   ├── normalization_modeLP.py      <- Script to calculate the normalization constant, for LP modes 
+    │   ├── normalization_betaHE.py      <- Script to calculate the normalization constant, for HE modes
     │   
-    ├── _04_Modeling                    <- Scripts para generación del modelo y afinamiento de parámetros.
+    ├── SI_05_propagation                <- propagation
+    │   ├── propagation.py               <- Script to calculate the propagation in plane (z,y) for a sum of modes HE 
     │   
-    ├── _05_Evaluation                  <- Scripts para evaluación de resultados establecidos al inicio del proyecto.
+    ├── SI_06_interference               <- interference
+    │   ├── interference.py              <- Script to calculate the spectral interference.
     │   
-    ├── _06_Deployment                  <- Scripts para el despliegue y pase a producción.
+    ├── SI_07_semi_analytical            <- semi_analytical
+    │   ├── semi_analytical.py           <- Script to calculate the spectral interference, for the semi-analitycal solution 
+    | 
+    ├── SI_08_polarization               <- polarization
+    │   ├── polarization.py              <- Script to calculate the spectral interference, for the semi-analitycal solution for 3 polarization states
+   
     
