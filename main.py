@@ -13,7 +13,7 @@ study = 5  #characteristic 1 : beta, 2 : modes, 3 : overlap,4 : propagation, 5:
 
 if study not in [1,2,3,4,5]:
     loop_exec = 0
-    print("Please choose a correct boundary condition")
+    print("Please choose a correct study")
 
 if study == 1: #Script to graph the characteristic equation as a function 
  #refractive index n3 
@@ -40,4 +40,5 @@ if study == 4: #Script to graph the overlap between modes LP and HE modes
 if study == 5: #Script to graph the propagation between h1,h2 in [1,2,3,4], z=L
  #plot_propagation(h1,h2,wavelength,lim,L,"Figure1")
  SI_05_propagation.plot_propagation(1,2,0.7,100,28000,"Figure1")
+
 plt.show()
