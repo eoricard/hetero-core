@@ -27,8 +27,7 @@ This repository allows reproduce the graps, and exploration of the interference 
     │       ├── plot_modeHE.py               <- Script to graph the modal distribution, for HE modes 
     |
     │   ├── (study==4) overlap             <- normalization
-    │       ├── normalization_modeLP.py      <- Script to calculate the normalization constant, for LP modes 
-    │       ├── normalization_betaHE.py      <- Script to calculate the normalization constant, for HE modes
+    │       ├── overlap.py                 <- Script to calculate the overlap integarl, 
     │   
     │   ├── (study==5) propagation          <- propagation along z
     │       ├── propagation.py               <- Script to calculate the propagation in plane (z,y) for a sum of modes HE 
