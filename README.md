@@ -12,7 +12,7 @@ This repository allows reproduce the graps, and exploration of the interference 
     │   ├── beta_HE_2D                     <- Data table of the propagation constant, for HE modes and 4 refraction indexes  (lambda,beta(lambda,n3=1),beta(lambda,n3=1.1),beta(lambda,,n3=1.2),beta(lambda,n3=1.3),beta(lambda,n3=1.4))
     | 
     ├── references                         <- suplemental information
-    ├──main.py  
+    ├──main.py                             <-Main execution file for study control (select a study). 
     |  ├── (study==1) characteristic       <- characteristic equation
     |       ├── plot_characteristic.py        <- Script to graph the characteristic equation as a function of the refractive index n3 and the radius of the heterocore fiber r2   
     │  
