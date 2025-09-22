@@ -4,14 +4,15 @@ import SI_02_beta
 import SI_03_mode
 import SI_04_overlap
 import SI_05_propagation
+import SI_06_interference
 import matplotlib.pyplot as plt
 from scipy.special import jv, kv
 
 loop_exec = 1 # Processing loop execution flag
 
-study = 5  #characteristic 1 : beta, 2 : modes, 3 : overlap,4 : propagation, 5:
+study = 4  #characteristic 1 : beta, 2 : modes, 3 : overlap,4 : propagation, 5: interference , 6
 
-if study not in [1,2,3,4,5]:
+if study not in [1,2,3,4,5,6]:
     loop_exec = 0
     print("Please choose a correct study")
 
@@ -40,5 +41,8 @@ if study == 4: #Script to graph the overlap between modes LP and HE modes
 if study == 5: #Script to graph the propagation between h1,h2 in [1,2,3,4], z=L
  #plot_propagation(h1,h2,wavelength,lim,L,"Figure1")
  SI_05_propagation.plot_propagation(1,2,0.7,100,28000,"Figure1")
-
+ 
+if study == 6: #Script to graph the spectral inteference between 4 modes HE, z=L
+ #plot_interference(A1,L,wavelength_initial,wavelength_end,points,"Figure1")
+ SI_06_interference.plot_interference(.9,28000,.7,1.6,10,"Figure1") 
 plt.show()
