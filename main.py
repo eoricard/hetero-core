@@ -13,7 +13,7 @@ loop_exec = 1 # Processing loop execution flag
 
 study = 4  #characteristic 1 : beta, 2 : modes, 3 : overlap,4 : propagation, 5: interference , 6 : semi-analytical 7:
 
-if study not in [1,2,3,4,5,6]:
+if study not in [1,2,3,4,5,6,7]:
     loop_exec = 0
     print("Please choose a correct study")
 
