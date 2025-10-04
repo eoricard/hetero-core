@@ -102,5 +102,5 @@ def plot_semi_analytical(L,fig_name):
 
  return fig1
 
-plot_semi_analytical(28000,"Figure_1")
-plt.show()
+#plot_semi_analytical(28000,"Figure_1")
+#plt.show()
