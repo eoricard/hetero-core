@@ -80,7 +80,7 @@ def plot_semi_analytical(L,fig_name):
  ax.grid(color='gray', linestyle='dashed', linewidth=1, alpha=0.4)
  ax.axhline(0, color='black', linewidth=0.5)
  ax.set_xlim(.95, 1.45)
- ax.set_ylim(.75, .81)
+ ax.set_ylim(.78, .83)
 
  ax = fig1.add_subplot(2, 3, 6)
  
@@ -98,9 +98,10 @@ def plot_semi_analytical(L,fig_name):
  ax.grid(color='gray', linestyle='dashed', linewidth=1, alpha=0.4)
  ax.axhline(0, color='black', linewidth=0.5)
  ax.set_xlim(.95, 1.45)
- ax.set_ylim(1.54, 1.6)
+ ax.set_ylim(1.56, 1.61)
 
  return fig1
 
 #plot_semi_analytical(28000,"Figure_1")
 #plt.show()
+
