@@ -1,5 +1,7 @@
 # hetero-core
 This repository allows reproduce the graps, and exploration of the interference in a hetero-core fiber 
+Citation Karla I Serrano-Arévalo et al 2025 J. Phys. Photonics 7 045036
+DOI 10.1088/2515-7647/ae0c4c
 
 ==============================
 
